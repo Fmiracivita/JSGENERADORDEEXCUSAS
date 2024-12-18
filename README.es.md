@@ -1,33 +1,73 @@
-# HTML Hello
+<!--hide-->
+# El generador de excusas CLI (en Javascript) 
+<!--endhide-->
 
-El boilerplate más básico para cualquier estudiante de 4Geeks Academy, empieza tu primer sitio web desde cero.
+Disneylandia para procrastinadores y perezosos.
 
-> Tienes un video tutorial sobre [cómo usar esta plantilla para crear tu primer sitio web aquí](https://youtu.be/dfbDCMu_p-0).
+¡Este proyecto es ideal para evitar a alguien molesto, no requiere más de 20 líneas de código y puede salvarte por el resto de tu vida!
 
-## ¿Qué hacer a continuación?
+## El Objetivo
 
-Crea un archivo `index.html` con [la estructura básica de HTML](https://4geeks.com/es/lesson/what-is-html-learn-html-es#estructura-de-pgina) y ve el resultado en vivo corriendo un servidor web utilizando el siguiente comando:
+Queríamos un proyecto que usara muy poco Javascript, pero aun con una aplicación muy divertida, el generador de excusas toma 20 líneas de código, es súper simple de entender y es el primer proyecto perfecto para cualquier desarrollador principiante.
+
+## 🌱  ¿Cómo iniciar este proyecto?
+
+1. Asegúrate de tener una cuenta de Github en: https://github.com
+2. Recomendamos abrir este repositorio usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/es/lesson/tutorial-de-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computador local usando el comando `git clone`.
+
+
+Este es el repositorio que necesitas abrir o clonar:
+
+```
+https://github.com/breatheco-de/excuse-generator-javascript-cli
+```
+
+**👉 Sigue estos pasos en **[cómo iniciar un proyecto de programación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
+
+3. Los ejercicios comenzarán y mostrarán las instrucciones automáticamente, pero si encuentras algún problema, puedes intentar ejecutarlos manualmente escribiendo en tu línea de comando lo siguiente:
 
 ```bash
-$ pip3 install flask && python3 server.py
+$ learnpack start
 ```
 
-- Puedes crear tantos archivos HTML cómo desees.
-- También puedes crear archivos CSS e importarlos en tu página web utilizando una etiqueta `<link>` ubicándola entre las etiquetas `<head></head>`, de la siguiente manera:
+## Instrucciones
+ 
+Por favor, crea un script de Javascript que genere una excusa cada vez que se ejecute.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+## Discute con tus compañeros de clase la estrategia primero
+
+¿Cómo podemos generar una excusa? ¿Cómo se construyen las oraciones?
+
+![Explicación del generador de excusas](https://github.com/breatheco-de/tutorial-project-excuse-generator-javascript/blob/master/explanation.gif?raw=true)
+
+¡La idea es generar cada parte de la oración aleatoriamente para obtener buenas excusas!
+
+## Pista
+
+1. Crea un archivo `app.py` con una excusa programada en una variable.
+2. La excusa debe estar en una variable:
+```js
+let excuse = 'The dog eat my homework when I finished';
 ```
+3. Usando Javascript, crea una función que genere y devuelva una excusa aleatoria con la siguiente estructura:
+```js
+let who = ['the dog','my granma','his turtle','my bird'];
+let what = ['eat','pissed','crushed','broked'];
+let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
+```
+4. Para crear una excusa consistente, debes concatenar un elemento de cada array en el orden correcto.
+5. Imprime la excusa en la consola usando la función `console.log()`.
 
+## Tecnologías
 
-## Agradecimientos
+Javascript.
 
-Esta y otras plantillas son utilizadas para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp). 
+## Fundamentos
 
-Realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. 
+Este ejercicio cubre los siguientes fundamentos:
 
-Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero/?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/desarrollador-full-stack/desarrollador-full-stack), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
+1. Correr archivos Javascript.
+2. Cómo trabajar con Arrays.
+3. Generar números aleatorios.
+4. Concatenar strings.
+5. Usar funciones (al menos un poco).

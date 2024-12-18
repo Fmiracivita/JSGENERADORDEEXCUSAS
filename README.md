@@ -1,30 +1,72 @@
-# HTML Hello
+<!--hide-->
+# The Excuse Generator CLI (in Javascript)
+<!--endhide-->
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Disneyland for procrastinators and lazy people.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+This project is ideal for avoiding someone annoying; it takes no more than 20 lines of code and can save you for the rest of your life!
 
-## What to do next?
+## The Goal
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+We wanted a project that used very little Javascript but still, with a very fun application, the excuse generator takes 20 lines of code, is super simple to understand, and is the perfect first-ish project for any beginner developer.
+
+## 🌱  How to start this project?
+
+1. Make sure you have a Github account at:  https://github.com
+2. We recommend opening this repository using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
+
+This is the repository you need to open or clone:
+
+```
+https://github.com/breatheco-de/excuse-generator-javascript-cli
+```
+
+**👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
+
+3. The exercises will start and show the instructions automatically, but if you encounter any issues you can try running them manually by typing in your command line the following:
 
 ```bash
-$ pip3 install flask && python3 server.py
+$ learnpack start
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+## Instructions
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+Please create a Javascript script that generates an excuse each time it is run.
+
+## Discuss with your classmates the strategy first
+
+How can we generate an excuse? How are sentences built?
+
+![Excuse generator explanation](https://github.com/breatheco-de/tutorial-project-excuse-generator-javascript/blob/master/explanation.gif?raw=true)
+
+The idea is to generate each part of the sentence randomly to come up with great excuses!
+
+## Hint
+
+1. Create an `app.py` file with one excuse hard-coded in one variable.
+2. The excuse must be in a variable:
+```js
+excuse = 'The dog eat my homework when I finished'
 ```
+3. Using Javascript, create a function that generates and returns a random excuse with the following structure:
+```js
+let who = ['the dog','my granma','his turtle','my bird'];
+let what = ['eat','pissed','crushed','broked'];
+let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
+```
+4. To create a consistent excuse, you have to concatenate one item from each array in the proper order.
+5. Print the excuse on the console using the `console.log()` function.
 
-### Contributors
+## Technologies
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+Javascript.
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+## Fundamentals
+
+This exercise covers the following fundamentals:
+
+1. Running Javascript files.
+2. How to work with Arrays.
+3. Generating random numbers.
+4. Concatenating strings.
+5. Using functions (at least a bit).
